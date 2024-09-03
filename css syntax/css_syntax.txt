@@ -1,0 +1,177 @@
+1) box-sizing: border-box ------------ border or padding add ho jate hain div ki width me extra add ho jate  hain toh wo extra add na ho toh box sizing border box  lagate hain ki box ki size wahi rahe or padding or boder (box/div )k andr hi lage
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2)diplay:flex: ---------agr 3 div hain ek bade div/container k andr  or usme display flex nai lga h toh wo ek column me rahenge ek k niche ek jb display flex lagayenge tb wo ek row me aa jaynge .
+
+********---------------saari chizen bade div me lagegi or movement chot div me dikhega-------------------********
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3)justify-content: -------Aligns flex items along the main axis (horizontal) of the flex container.
+------------div/container k andr k chote div/item ko horizonatally align/arrange  karna  h  toh justify-content use krte hain 
+
+     justify-content : center ----- jo 3 div banaye hain wo 3 div phle  display k left side me chipke hue the jb justify-content lagayenge tb wo div  ab display k center me aa jayenge  )
+
+    justify-content:left,)  or  ( justify-content:flex-start  dono same h ------ div end (left) pe chale jayega )
+
+     justify-content:right )  or ( justify-content:flex-end donp same h ------ div end (right) pe chale jayega )
+
+     justify-content:space-evenly-----div k bich me equal space aa jayega or starting or end me bhi space rahega)
+
+      justify-content:space-between -------div k bich me toh equal space rahega but starting or end me space nai rahega )
+
+     justify-content:space-around -----------jo bda div h uske andr jo chote div hain uske  bich  k  do chote div k barabar jagah/space  aa jayega (chote wale div k size ka )or starting or end m ek chote wale div k size ka space aa jayega)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4)align-items:------------ Aligns flex items along the cross axis (vertical ) of the flex container.
+--------------div/container k andr k chote div/item ko vertically align/arrange  karna h  toh align-items ka use krte hain 
+
+     align-items : flex-start--------- saare chote div jo container/ badediv k andr hain wo top pe chale jayenge
+   
+     align-items : flex-end------ saare chote div jo container/ badediv k andr hain wo bottom pe chale jayenge
+
+     align-items : center---------saare chote div jo container/ badediv k andr hain wo center pe chale jayenge
+
+     align-items : baseline-------bade div k andr jo chote div h uske andr jo bhi text likha h  uske center se align  krta h chote div ko 
+
+ ****  align-self:start/end/center/baseline -------ye align-item kisi ek chote div(jo bade div k andr h ) uspe particularly lagta h iska use hm log ek chote div ka position decide krne k liye use krte hain. - - - Example - - -  agr hame ek div center me chahiye or baki k chote div start me chahiye toh jis div ko hm start me bhjna cahte hain uske class me bs align-self:start likh denge . (same end/center/ baseline k liye )
+      
+
+
+--------align-content or align-item same h pr align-content ko flex wrap/reverse wrap k sath use kiya jata h 
+
+syntax of align-content ----
+
+     flex-wrap:wrap;   (align content tb hi lagega jb flex-wrap:wrap/reverse-wrap laga ho )
+    align-content:flex-start ;--------flex wrap ki wajah se kch chote div ek line me rahenge or kch div uske niche wali line me rahenge agr flex direction row h toh  ab align-content:flex-start  saare chote div jo container/ badediv k andr hain usko top pe bhj dega
+
+
+  flex-wrap:wrap;
+    align-content:flex-end ;--------flex wrap ki wajah se kch chote div ek line me rahenge or kch div uske niche wali line me rahenge agr flex direction row h toh  ab align-content:flex-end  saare chote div jo container/ badediv k andr hain usko bottom pe bhj dega 
+
+flex-wrap:wrap;
+    align-content:flex-center ;--------flex wrap ki wajah se kch chote div ek line me rahenge or kch div uske niche wali line me rahenge agr flex direction row h toh  ab align-content:flex-end  saare chote div jo container/ badediv k andr hain usko center pe bhj dega 
+
+
+flex-wrap:wrap;
+align-content:space-betwen;------------flex wrap ki wajah se kch chote div ek line me rahenge or kch div uske niche wali line me ho gaye hain toh ab chote div ke  bich me space aa jayega jo div first line me hain wo top pe  chale jayega bade div/container k or jo div niche line me h wo bottom pe chale jayega bade div k 
+
+flex-wrap:wrap;
+align-content:space-around;-------------
+
+flex-wrap:wrap;
+align-content:space-evenly;---------- 
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//////////////////////////////////////read point 7) flex flow ////////////////////////////////////////////////
+5)flex-direction: ---------Specifies the direction of the main axis that is row and cross axis that is column  (row, row-reverse, column, column-reverse). 
+         flex-direction:row ---------  (ye container se related property h na ki uske andr k items se related mtlb container k andr k items k direction me changes ayega ) ek bda div(container ) h uske andr 4 div or h agr direction row lagayenge bade div me toh jo div uske andr k div same rahega  -----(ye default value    rehti h mtlb phle se hi rehta h isko lagao ya na lagao same h )
+
+        flex-direction:row-reverse ---------container  k andr k items ka direction right to left ho jayega sbse 1st div (item) right me rahega or  wala left me uske or 3rd uske left me(container k andr k items ka direction default left to right rehta h )
+
+        flex-direction:column ---------- container (bda div) k andr k items upr se niche arrange ho jayenge column wise me 
+
+        flex-direction:column-reverse-------- container (bda div) k andr k items niche se upr arrange ho jayenge column wise me
+
+   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+6)flex-Wrap:-------- Specifies whether flex items should wrap if they exceed the size of the flex container/div (nowrap, wrap, wrap-reverse).   ek bade div ya container k andr bht sare chote div hain to wo overflow ho  jayega container se (bhr aa jayega bade wale div se ) isse bachne k liye hm log flex wrap ka use krte hain.
+
+      flex-Wrap: nowrap ----------- default h isko lagana ya nai lagana same h (koi change nai ayega bade div se bhr jayenge hi chote div )
+     
+       flex-Wrap: wrap --------- isse jo chote chote div hain wo bade div k andr aa jayenge or agr flex-direction:column /row de denge toh sare div row ya column  wise ek niche ek aa jayenge (div jo phle bna h wo phle ayega uske niche uske bad wale ayenge ) 
+-------flex-wrap:wrap k sath align-content:center/space-between/space-around/space-evenly  ka use krte hain-----------
+   
+        flex-Wrap: reverse-wrap------------isme bade div k andr saare chote  div aa jayenge but jo sabse phle bna h div wo last me ho jayega or jo naya bna h div wo sbse phle ho jayega .flex-direction:row  karenge toh row wise ho jayega or flex-direction:column karenge toh column wise me ho jayega age piche .
+-------flex-wrap:reverse-wrap k sath align-content:center/space-between/space-around/space-evenly  ka use krte hain-------
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7) flex-flow --------------- flex-flow short hand hai flex-direction or flex-wrap ka dono ko ek sath likh sakte hain flex-flow ka use kr k.
+  
+   flex-flow: column  wrap--------isme jo bda div  h uske andr chote chote div (k andr aa jayenge) wrap ho jayenge column wise me 
+    
+    flex-flow:row wrap---------isme jo bda div  h uske andr chote chote div (k andr aa jayenge) wrap ho jayenge row wise me 
+
+
+
+    
+
+8) align-content:----------  Aligns flex lines within the flex container when there is extra space in the cross axis.
+
+
+
+
+   <Modal show={show} style={{
+        marginTop: '110px',
+        backgroundColor: 'rgba(256, 252, 255, 0.4)', WebkitBackdropFilter: 'blur(4px)', backdropFilter: 'blur(4px)'    //ye 3 css modal ka background blur krne k liye h
+      }}>
+        <Modal.Header closeButton onHide={handleClose} style={{ background: '#141113' }}>
+          <Modal.Title style={{ color: 'white' }} >Add Role</Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ background: '#dbdbdb' }}>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="mb-3 " >
+              <Form.Label style={{ fontWeight: 700 }} >Role id</Form.Label>
+              <Form.Control type="text" name="rid" value={post.rid} placeholder="Enter Role id " onChange={handleChange} />
+
+            </Form.Group>
+
+            <Form.Group className="mb-3 " >
+              <Form.Label style={{ fontWeight: 700 }} >Role Name</Form.Label>
+              <Form.Control type="text" name="r_name" value={post.r_name} placeholder="Enter Role Name" onChange={handleChange} />
+            </Form.Group>
+          </Form>
+
+        </Modal.Body >
+        <Modal.Footer style={{ background: '#dbdbdb', display:'flex',justifyContent:'space-between'  }} >
+         
+          <div value={show} onClick={handleClose} class="AnimatedButton1">       {/**<--Animated button1 */}
+            <p value={show} onClick={handleClose} class="animated-word1">Close</p>
+          </div>
+          
+
+          <div value={show} onClick={handleSubmit} class="AnimatedButton2">       {/**<--Animated button2 */}
+            <p value={show} onClick={handleSubmit} class="animated-word2">Save Changes</p>
+          </div>
+          
+          
+        </Modal.Footer>
+      </Modal>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
